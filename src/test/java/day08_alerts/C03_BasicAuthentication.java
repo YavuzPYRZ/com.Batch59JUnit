@@ -1,4 +1,4 @@
-package day07_assertions;
+package day08_alerts;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -9,33 +9,27 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C04_DropDownMenu {
-    /* amazon'a gidip
-   dropdown'dan books secenegini secip
-   Java aratalim
-   ve arama sonuclarinin Java icerdigini test edelim
- */
-    WebDriver driver;
+public class C03_BasicAuthentication {
+
+
+    static WebDriver driver;
     @Before
-    public void setUp() {
+    public void setUp(){
+
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-
+        driver.get("https://admin:admin@the-internet.herokuapp.com/basic_auth");
 
     }
 
     @After
     public void tearDown() {
-
-        driver.quit();
+        //driver.quit();
     }
-
     @Test
-    public void test02() {
-        driver.get("https://www.amazon.com"); // amazon'a git
+    public void test01(){
 
     }
-
 }
