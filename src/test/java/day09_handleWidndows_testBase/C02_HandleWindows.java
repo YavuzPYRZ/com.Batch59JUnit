@@ -66,7 +66,7 @@ public class C02_HandleWindows {
 
         // 7- yeniden bestbuy'in acik oldugu sayfaya gidelim
         driver.switchTo().window(ikinciSayfaWindowHandleDegeri);
-        // 8- logonun gorundugunu test edelim...
+        // 8- logonun gorundugunu test edelim..."
         WebElement logoelementi= driver.findElement(By.xpath("(//img[@class='logo'])[1]"));
         Assert.assertTrue(logoelementi.isDisplayed());
     }
