@@ -54,7 +54,7 @@ public class C01_Assertions {
     public void test03(){
             //sol ustte amazon logosu oldugunu test edin.
      WebElement amazonLogo = driver.findElement(By.xpath("//a[@id='nav-logo-sprites']"));
-     Assert.assertTrue(amazonLogo.isDisplayed());
+     Assert.assertTrue(amazonLogo.isDisplayed() );
 
 
     }
