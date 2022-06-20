@@ -43,7 +43,7 @@ public class C01_Assertions {
         }
 
     @Test
-    public void test02(){
+    public void test02(){ // test passed
             //title nin facebook içermedigini test edin.
         String beklenenBaslık = "facebook";
         String actualUrl = driver.getTitle();
